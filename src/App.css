@@ -1,0 +1,59 @@
+
+body,html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main{
+ overflow-y: scroll;
+ overflow-x: hidden;
+ width: 100%;
+ height: 400vw;
+
+}
+.App-container{
+  width: 100%;
+}
+.screen{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#portada{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+header{
+  position: fixed;
+  z-index: 15;
+  height: 10%;
+  width: 100%;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+}
+#topbar{
+  width: 80%;
+  height: 100%;
+}
+#textsec1{
+  position: absolute;
+  z-index: 18;
+  top: 50%;
+  left: 70%;
+}
+.screen1text{
+  font-family: 'Alfa Slab One';
+  color: white;
+}
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
+}
