@@ -46,7 +46,8 @@ body{
   cursor: pointer;
   font-family: 'Krona One';
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: 'Lexend Deca';
 }
 #headerbtncontainer{
   position: absolute;
@@ -55,39 +56,73 @@ body{
   justify-content: space-evenly; 
   width: 80%;
   height:100% ;
+  font-family: 'Lexend Deca';
 }
 #txt-container{
   position: absolute;
   z-index: 14;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 30%;
   text-align: center;
+  font-family: 'Lexend Deca';
+  
 }
-h1{
-  font-size: 1rem;
+#screen1 #txt-container h1{
+  font-size: 1.5rem;
+  animation: fadein 1s ease-out 0.5s forwards; 
+  opacity: 0; 
+  color: white;
 }
-h2{
-  font-size: 2rem;
+ #screen1 #txt-container h2{
+  font-size: 4rem;
+  animation: fadein 1s ease-out 1.0s forwards; 
+  opacity: 0; 
 }
-h3{
-  font-size: 1rem;
+#screen1 #txt-container h3{
+  font-size: 1.5rem;
+  animation: fadein 1s ease-out 1.5s forwards; 
+  opacity: 0; 
+  color: #00E5FF;
 }
 #screen2content{
- position: absolute;
- z-index: 13;
  width: 100%;
   height: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  top: 10%;
-}
-#top{
 
 }
+#habilidades{
+  width: 20%;
+  height: auto;
+}
+#txtscreen2container{
+ width: 20%;
+  height: auto;
+}
+ #fotomica{
+  width: 25%;
+  height: auto;
+}
+h5{
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+h4{
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+#top{
+height: 30%;
+display: flex;
+justify-content: center;
+}
 #bottom{
- height: 70%;
+ height: 60%;
  display: flex;
  align-items: center;
  justify-content: space-evenly;
@@ -104,17 +139,35 @@ h3{
   top: 10%;
 }
 #top2{
-
+ height: 30%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ gap: 0;
 }
 #bottom2{
- height: 70%;
+ height: 60%;
  display: flex;
  align-items: center;
  justify-content: space-evenly;
 }
+#feufighters, #neurosafe, #robolingo{
+  width: 30%;
+  height: auto;
+}
+h6{
+ font-size: 4rem;
+ margin: 0;
+ padding: 0;
+ font-weight: bold;
+}
+h7{
+ font-size: 2rem;
+  margin: 0;
+ padding: 0;
+}
 #contactscontainer{
-  position: absolute;
-  z-index: 20;
   width: 100%;
   height: 90%;
   display: flex;
@@ -124,12 +177,70 @@ h3{
   
 }
 #txtcontacto{
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  height: 10%;
   margin-top: 10%;
+  text-align: center;
+}
+#contactsec{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+
 }
 #contactos{
- width: 50%;
+ width: 60%;
  height: auto;
  margin-top: 15%;
+ margin-left: 25%;
+}
+h8{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.txt{
+  font-family: 'Lexend Deca';
+}
+.gradient-text1 {
+  background: linear-gradient(to right, #FC3333, #FF9700); 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+  display: inline-block; 
+  font-family: 'Lexend Deca';
+}
+.gradient-text2 {
+  background: linear-gradient(to right, #00FF1E, #FFFF00); 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+  display: inline-block; 
+  font-family: 'Lexend Deca';
+}
+.gradient-text3 {
+  background: linear-gradient(to right, #1A00FF, #EA00FF); 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+  display: inline-block; 
+  font-family: 'Lexend Deca';
+}
+.gradient-text4 {
+  background: linear-gradient(to right, #FF00B2, #FF0000); 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+  display: inline-block; 
+  font-family: 'Lexend Deca';
+}
+@keyframes fadein{
+from{
+   opacity: 0;
+   transform: translateY(20px);
+}
+to{
+  opacity: 1;
+  transform: translateY(0);
+}
 }
