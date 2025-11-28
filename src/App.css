@@ -1,40 +1,52 @@
-
-body,html{
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+header{
+  transition: background-image 0.5s ease;
+  position: fixed;
+  z-index: 20;
+  width: 30%;
+  height: 10%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  top: 5%;
+  left: 50%; 
+  transform: translateX(-50%);
 }
 main{
- overflow-y: scroll;
- overflow-x: hidden;
- width: 100%;
- height: 400vh;
-
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 400vw;
+  height: 100vh;
+  background-color: #0F0D19;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  
 }
 .App-container{
   width: 100%;
 }
 .screen{
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   position: relative;
 }
-
-
-header{
-  position: fixed;
-  z-index: 100;
-  height: 10%;
-  width: 100%;
-  top: 10%;
-  display: flex;
-  justify-content: center;
-}
-#topbar{
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
+.headerbtn{
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Krona One';
+  color: white;
+  font-size: 1rem;
 }
 #headerbtncontainer{
   position: absolute;
@@ -44,105 +56,61 @@ header{
   width: 80%;
   height:100% ;
 }
-#btn menu principal{
-
-}
-#btn sobre mi{
-
-}
-#btn proyectos{
-
-}
-#btn contacto{
-  
-}
-#textsec1{
+#txt-container{
   position: absolute;
-  z-index: 18;
-  top: 60%;
-  left: 65%;
-  text-align: right;
-}
-.screen1text{
-  font-family: 'Alfa Slab One';
-  color: white;
-  margin: 0;
-  
+  z-index: 14;
+  top: 40%;
+  left: 40%;
+  text-align: center;
 }
 h1{
-  font-size: 4rem;
+  font-size: 1rem;
 }
 h2{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
-
-#screen2-components{
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  top: 10%;
-  left: 0;
-}
-
-#sobremi, #habilidades {
-  width: 45%; 
-  height: 80%; 
-  align-self: center;
-
-}
-#projectscontainer{
-  position: absolute;
-  z-index: 20;
-  width: 100%;
+#screen2content{
+ position: absolute;
+ z-index: 13;
+ width: 100%;
   height: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   top: 10%;
-  
 }
-#projectsec{
- width: 100%;
+#top{
+
+}
+#bottom{
  height: 70%;
  display: flex;
  align-items: center;
  justify-content: space-evenly;
 }
-#bannersec{
-  
-  width: 100%;
-  height: 10%;
-}
-#robolingo, #rampagearena, #feufighters{
-    width: 15%;
-    height: auto
-    
-}
-#banner{
-  width: 100%;
-  height: 100%;
-  
-  
-}
-#bannersec2{
-  
-  width: 100%;
-  height: 10%;
+#screen3content{
+ position: absolute;
+ z-index: 13;
+ width: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
 }
-#contactssec{
- width: 100%;
- height: 80%;
+#top2{
+
+}
+#bottom2{
+ height: 70%;
  display: flex;
- justify-content: center;
+ align-items: center;
+ justify-content: space-evenly;
 }
 #contactscontainer{
   position: absolute;
@@ -155,7 +123,7 @@ h3{
   align-items: center;
   
 }
-#banner2{
+#txtcontacto{
   width: 90%;
   height: 100%;
   margin-top: 10%;
@@ -164,35 +132,4 @@ h3{
  width: 50%;
  height: auto;
  margin-top: 15%;
-}
-.backgrounds{
-  position: absolute;
-  z-index: -3;
-  width: 100%;
-  height: 100%;
-}
-.headerbtn{
-  background: transparent;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: 'Krona One';
-  color: white;
-  font-size: 1.5rem;
-}
-@keyframes carouselScroll{
-  from{transform: translateX(0);}
-  to{transform: translateX(-50%); }
-}
-#screen1bckgs{
-   white-space: nowrap;
-    display: flex;
-    align-items: center;
-  animation: carouselScroll 10s linear infinite;
-}
-#screen2bckgs{
-   white-space: nowrap;
-    display: flex;
-    align-items: center;
-  animation: carouselScroll 10s linear infinite;
 }
